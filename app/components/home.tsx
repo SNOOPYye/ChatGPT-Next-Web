@@ -66,6 +66,9 @@ export function useSwitchTheme() {
       metaDescriptionDark?.setAttribute("content", themeColor);
       metaDescriptionLight?.setAttribute("content", themeColor);
     }
+
+    document.title = "Un ChatGPT"; //设置页面标题的更新代码
+
   }, [config.theme]);
 }
 
@@ -134,3 +137,4 @@ export function Home() {
     </ErrorBoundary>
   );
 }
+
